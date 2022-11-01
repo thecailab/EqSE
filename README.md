@@ -32,5 +32,5 @@ Others: Tool dependencies of all above tools.
 Conjugate histone modification data into above seurat object.
 
 #### STEP5 (EqSE identification)
-#Perform standard correlation analysis to identify EqSEs (Fig. )
-#Integrative analysis and visualization of EqSEs (Fig. )
+1. Perform standard correlation analysis to identify EqSEs.
+2. Integrative analysis and visualization of EqSEs.
