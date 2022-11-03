@@ -1,5 +1,7 @@
 # Identification of Expression Quantitative Super Enhancers (EqSEs) using Single-cell Multiomic Data
 
+Author: Guoshuai Cai
+
 #### Tool dependencies:
 
 reachtools, https://github.com/cxzhu/Paired-Tag
