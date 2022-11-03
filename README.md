@@ -20,6 +20,7 @@ Others: Tool dependencies of all above tools.
 #### STEP 2 (cell type identification)
 1. Constrcut Seurat object with single-cell transcriptome data.
 2. Identify cell types and generate corresponding barcode lists.
+
 In the mouse brain study, the RNA sequencing read counts were normalized using the “LogNormalize” method and further centered and scaled by standard deviations. 2000 highly variable feature were selected, and dimension of their space was reduced using the top 20 principal components. Further, cell clusters were identified using the Louvain optimization-based clustering method, and were visualized in reduced dimensions of Uniform Manifold Approximation and Projection (UMAP). Based on the expression of markers that were used in the original study of GSE152020, 18 cell types were identified, including 7 FC cell types (FC L2/3, FC L4, FC L5, FC PT, FC NP, FC CT, FC L6), 3 HC cell types (HC CA1, HC CA2/3, HC DG), 3 Interneurons (InNeu-CGE, InNeu-Sst, InNeu-Pvalb), Oligodendrocyte precursor cells (OPC), Oligodendrocytes (Oligo), Astrocytes, Endothelial cells and Ependymal cells (Fig. S1).
 
 #### STEP 3 (SE identification and quantification)
