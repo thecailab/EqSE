@@ -1,6 +1,6 @@
 # Identification of Expression Quantitative Super Enhancers (EqSEs) using Single-cell Multiomic Data
 
-## Author: Guoshuai Cai
+### Author: Guoshuai Cai
 
 #### Tool dependencies:
 
