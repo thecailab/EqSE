@@ -2,6 +2,8 @@
 
 ## Author: Guoshuai Cai
 
+![Image_of_workflow](https://github.com/thecailab/EqSE/blob/main/workflow.png)
+
 ### Tool dependencies:
 
 reachtools, https://github.com/cxzhu/Paired-Tag
