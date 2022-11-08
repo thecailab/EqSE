@@ -3,7 +3,7 @@
 ## Author: Guoshuai Cai
 
 ![Image_of_workflow](https://github.com/GuoshuaiCai/EqSE/blob/main/workflow.png | width=100)
-<img src="https://github.com/GuoshuaiCai/EqSE/blob/main/workflow.png" width="100" height="100">
+<img src="https://github.com/GuoshuaiCai/EqSE/blob/main/workflow.png" width="300" height="300">
 
 ### Tool dependencies:
 
