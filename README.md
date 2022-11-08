@@ -2,7 +2,7 @@
 
 ## Author: Guoshuai Cai
 
-![Image_of_workflow](https://github.com/GuoshuaiCai/EqSE/main/workflow.png)
+![Image_of_workflow](https://github.com/GuoshuaiCai/EqSE/blob/main/workflow.png)
 
 ### Tool dependencies:
 
