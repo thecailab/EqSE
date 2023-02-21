@@ -1,8 +1,8 @@
-# Identification of Expression Quantitative Super Enhancers (EqSEs) using Single-cell Multiomic Data
+# Identification of Expression Quantitative Super Enhancers (eSEs) using Single-cell Multiomic Data
 
 ## Author: Guoshuai Cai
 
-<img src="https://github.com/GuoshuaiCai/EqSE/blob/main/workflow.png" width="800" height="800">
+<img src="https://github.com/GuoshuaiCai/eSE/blob/main/workflow.png" width="800" height="800">
 
 ### Tool dependencies:
 
@@ -37,6 +37,6 @@ In the mouse brain study, the RNA sequencing read counts were normalized using t
 ### STEP4 (data conjugation)
 Conjugate histone modification data into above seurat object.
 
-### STEP5 (EqSE identification)
-1. Perform standard correlation analysis to identify EqSEs.
-2. Integrative analysis and visualization of EqSEs.
+### STEP5 (eSE identification)
+1. Perform standard correlation analysis to identify eSEs.
+2. Integrative analysis and visualization of eSEs.
