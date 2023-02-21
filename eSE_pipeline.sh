@@ -46,6 +46,6 @@ reachtools bam2Mtx2 H3K27ac_merged_dna_mm10_sorted_rmdup_sorted.bam ROSE/All_H3K
 
 #STEP5
 #conjugating histone modification data into above seurat object
-#perform standard correlation analysis to identify EqSEs (Fig. )
-#integrative analysis and visualization of EqSEs (Fig. )
+#perform standard correlation analysis to identify eSEs (Fig. )
+#integrative analysis and visualization of eSEs (Fig. )
 
