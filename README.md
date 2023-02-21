@@ -2,7 +2,7 @@
 
 ## Author: Guoshuai Cai
 
-<img src="https://github.com/GuoshuaiCai/eSE/blob/main/workflow.png" width="800" height="800">
+<img src="https://github.com/GuoshuaiCai/eeSE/blob/main/workflow.png" width="800" height="800">
 
 ### Tool dependencies:
 
