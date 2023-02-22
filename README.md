@@ -4,6 +4,9 @@
 
 <img src="https://github.com/GuoshuaiCai/eSE/blob/main/workflow.png" width="800" height="800">
 
+### Platform/data Compatibility
+With necessary modifications, the proposed workflow is versatile and is logically adaptable to current established single-cell multi-omic measures of transcriptome and histone modification, including Paired-Tag,  CoTECH, SET-seq, EpiDamID and others. The below pipeline is constructed for Paired-Tag data processing. For data from other platforms, specific tools (e.g, reachtools for Paired-Tag) are likely needed for processing the data with their specific formats and settings such as barcodes and demultiplexing. Users can check with their orginal papers for appropriate tools and protocols and accordingly modify the STEPs 1-2 of this pipeline.
+
 ### Tool dependencies:
 
 reachtools, https://github.com/cxzhu/Paired-Tag
