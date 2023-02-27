@@ -76,4 +76,4 @@ wcorr<-wcorr.calc(dat.exp, dat.histone,w.exp,w.histone,celltype=celltype)
 ```{r}
 wcorr.plot(dat.exp, dat.histone,w.exp,w.histone,celltype=celltype, cell="FcNeu", peak="chr2:73584986-73596983_Chn1",color="red")
 ```
-<img src="https://github.com/GuoshuaiCai/KEEP/blob/main/plot_demo.png" width="800" height="800">
+<img src="https://github.com/GuoshuaiCai/KEEP/blob/main/plot_demo.png" width="500" height="500">
