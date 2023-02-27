@@ -48,7 +48,7 @@ Conjugate histone modification data into above seurat object.
 1. Perform standard correlation analysis to identify eSEs.
 2. Integrative analysis and visualization of eSEs.
 
-<br>
+<br><br>
 ## Example of correlation calculation
 ```{r}
 load("wcorr_func.R")
