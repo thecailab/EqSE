@@ -1,4 +1,4 @@
-# Identification of Expression Quantitative Super Enhancers (eSEs) using Single-cell Multiomic Data
+# SEEK to Identify Expression Associated Super Enhancers (eSEs) Using Single-cell Multi-omic Data
 
 ## Author: Guoshuai Cai
 
