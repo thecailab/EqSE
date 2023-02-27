@@ -11,11 +11,15 @@ With necessary modifications, the proposed workflow is versatile and is logicall
 
 reachtools, https://github.com/cxzhu/Paired-Tag
 
-macs, https://github.com/macs3-project/MACS, macs2 was used in this pipeline.
+macs, https://github.com/macs3-project/MACS, macs2 was used in this pipeline
 
 ROSE, https://github.com/stjude/ROSE
 
-Seurat, https://satijalab.org/seurat/, Seurat v4.0.2 was used in this pipeline.
+Seurat, https://satijalab.org/seurat/, Seurat v4.0.2 was used in this pipeline
+
+zinbwave, https://github.com/drisso/zinbwave
+
+wcorr, https://cran.r-project.org/web/packages/wCorr/index.html
 
 Others: Tool dependencies of all above tools.
 
@@ -43,3 +47,9 @@ Conjugate histone modification data into above seurat object.
 ### STEP5 (eSE identification)
 1. Perform standard correlation analysis to identify eSEs.
 2. Integrative analysis and visualization of eSEs.
+
+##Example of correlation calculation
+```{r}
+load("wcorr_func.R")
+load("data_demo.RData")
+```
