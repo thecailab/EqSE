@@ -57,8 +57,10 @@ load("wcorr_func.R")
 load("data_demo.RData")
 
 #weight calculation
+```{r}
 w.exp<-weight.calc(count.exp, celltype=celltype)
 w.histone<-weight.calc(count.histone, celltype=celltype)
+```
 
 #normalization
 dat.exp<-log2(t(t(count.exp)/colSums(count.exp)*median(colSums(count.exp)))+1)
