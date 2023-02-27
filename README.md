@@ -53,3 +53,19 @@ Conjugate histone modification data into above seurat object.
 load("wcorr_func.R")
 load("data_demo.RData")
 ```
+load("wcorr_func.R")
+load("data_demo.RData")
+
+#weight calculation
+w.exp<-weight.calc(count.exp, celltype=celltype)
+w.histone<-weight.calc(count.histone, celltype=celltype)
+
+#normalization
+dat.exp<-log2(t(t(count.exp)/colSums(count.exp)*median(colSums(count.exp)))+1)
+dat.histone<-log2(t(t(count.histone)/colSums(count.histone)*median(colSums(count.histone)))+1)
+
+#weighted corrlation calculation
+wcorr<-wcorr.calc(dat.exp, dat.histone,w.exp,w.histone,celltype=celltype)
+
+#plot
+wcorr.plot(dat.exp, dat.histone,w.exp,w.histone,celltype=celltype, cell="FcNeu", peak="chr18:65572389-65583343_Zfp532",color="red")
