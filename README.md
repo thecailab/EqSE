@@ -68,4 +68,4 @@ dat.histone<-log2(t(t(count.histone)/colSums(count.histone)*median(colSums(count
 wcorr<-wcorr.calc(dat.exp, dat.histone,w.exp,w.histone,celltype=celltype)
 
 #plot
-wcorr.plot(dat.exp, dat.histone,w.exp,w.histone,celltype=celltype, cell="FcNeu", peak="chr18:65572389-65583343_Zfp532",color="red")
+wcorr.plot(dat.exp, dat.histone,w.exp,w.histone,celltype=celltype, cell="FcNeu", peak="chr2:73584986-73596983_Chn1",color="red")
