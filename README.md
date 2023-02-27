@@ -48,26 +48,31 @@ Conjugate histone modification data into above seurat object.
 1. Perform standard correlation analysis to identify eSEs.
 2. Integrative analysis and visualization of eSEs.
 
-##Example of correlation calculation
+
+## Example of correlation calculation
 ```{r}
 load("wcorr_func.R")
 load("data_demo.RData")
 ```
-load("wcorr_func.R")
-load("data_demo.RData")
 
-#weight calculation
+### weight calculation
 ```{r}
 w.exp<-weight.calc(count.exp, celltype=celltype)
 w.histone<-weight.calc(count.histone, celltype=celltype)
 ```
 
-#normalization
+### normalization
+```{r}
 dat.exp<-log2(t(t(count.exp)/colSums(count.exp)*median(colSums(count.exp)))+1)
 dat.histone<-log2(t(t(count.histone)/colSums(count.histone)*median(colSums(count.histone)))+1)
+```
 
-#weighted corrlation calculation
+### weighted corrlation calculation
+```{r}
 wcorr<-wcorr.calc(dat.exp, dat.histone,w.exp,w.histone,celltype=celltype)
+```
 
-#plot
+### plot
+```{r}
 wcorr.plot(dat.exp, dat.histone,w.exp,w.histone,celltype=celltype, cell="FcNeu", peak="chr2:73584986-73596983_Chn1",color="red")
+```
