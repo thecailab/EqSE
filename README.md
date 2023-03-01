@@ -1,4 +1,4 @@
-# SEEK to Identify Expression Associated Super Enhancers (eSEs) Using Single-cell Multi-omic Data
+# SEEK to Evaluate <ins>S</ins>uper <ins>E</ins>nhancer-<ins>E</ins>xpression <ins>C</ins>orrelations and Identify Expression Assocaited Super Enhancers (eSEs) Using Single-cell Multi-omic Data
 
 ## Author: Guoshuai Cai
 
