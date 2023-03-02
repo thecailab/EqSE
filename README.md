@@ -23,7 +23,7 @@ wcorr, https://cran.r-project.org/web/packages/wCorr/index.html
 
 Others: Tool dependencies of all above tools.
 
-pipeline coded in this work: eSE_pipeline.sh
+pipeline coded in this work: **eSE_pipeline.sh**
 
 ### STEP 1 (sequencing data processing)
 1. Process same-cell multi-omic data of each sub-libarary, following the protocol in https://github.com/cxzhu/Paired-Tag.
