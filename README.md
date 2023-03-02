@@ -79,3 +79,5 @@ wcorr<-wcorr.calc(dat.exp, dat.histone,w.exp,w.histone,celltype=celltype)
 wcorr.plot(dat.exp, dat.histone,w.exp,w.histone,celltype=celltype, cell="FcNeu", peak="chr2:73584986-73596983_Chn1",color="red")
 ```
 <img src="https://github.com/GuoshuaiCai/SEEK/blob/main/plot_demo.png" width="500" height="500">
+
+**Note**: Athough the probablity if non-expression rather then drop-out is considered, but the correlation calcuation is still strongly effected by the number of non-missing values and missing values. Thus, we suggest to remove features which has only a small number of non-missing values to achieve an reliable correlation assessment. In our study, SE-gene pairs that have non-missing multi-modal data in more than 300 cells and more than 20 in each major neuron types were analyzed.
