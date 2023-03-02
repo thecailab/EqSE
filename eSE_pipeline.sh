@@ -45,9 +45,12 @@ reachtools bam2Mtx2 H3K27ac_merged_dna_mm10_sorted_rmdup_sorted.bam ROSE/All_H3K
 #generating H3K27ac_merged_dna_mm10_sorted_rmdup_sorted_mtx2
 
 #STEP5
+
 #conjugating histone modification data into above seurat object
+
 #perform weighted correlation analysis to identify eSEs.
 load("wcorr_func.R")
+example is shown in the Readme
 
 #integrative analysis and visualization of eSEs.
 
