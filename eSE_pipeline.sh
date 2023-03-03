@@ -17,7 +17,7 @@
 module load samtools/gcc/1.5
 samtools merge -b bamlist_dna.txt -o merged_dna_mm10_sorted_rmdup.bam
 
-#split
+#split H3K4me1 and H3K27ac data
 perl splitbam.pl merged_dna_mm10_sorted_rmdup.bam
 
 #STEP 2
