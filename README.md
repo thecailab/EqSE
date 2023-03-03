@@ -80,4 +80,4 @@ wcorr.plot(dat.exp, dat.histone,w.exp,w.histone,celltype=celltype, cell="FcNeu",
 ```
 <img src="https://github.com/GuoshuaiCai/SEEK/blob/main/plot_demo.png" width="500" height="500">
 
-**Note**: Although the probability of that zero is from non-expression but not drop-out is considered, but the correlation calculation is still strongly affected by the number and proportion of non-missing values. Thus, we suggest to remove features which has only a small number of non-missing values to achieve a reliable correlation assessment. In our study, SE-gene pairs that have non-missing multi-modal data in more than 300 cells and more than 20 in each major neuron types were analyzed.
+**Note**: Although the probability of that zero is from non-expression but not drop-out is considered, but the correlation calculation is still strongly affected by the number and proportion of non-missing values. Thus, we suggest to remove features with small numbers of non-missing values to achieve a reliable correlation assessment. Our study analyzed SE-gene pairs that have non-missing multi-modal data in more than 300 cells and more than 20 cells in each major neuron type.
