@@ -63,7 +63,6 @@ wcorr.calc<-function(dat.exp, dat.histone, w.exp, w.histone, alpha=3, method="sp
       histone.i<-dat.histone[i,]
       w2.i<-w2[i,]
 
-      fit<-lm(exp.i[pos]~histone.i[pos],weight=w2.i[pos])
       out.m[i,1]<-weightedCorr(exp.i[pos],histone.i[pos],weight=w2.i[pos], method=method)
       out.m[i,2]<-length(which(w2.i[pos]>0.5))
       colnames(out.m)<-paste(c("Rho","n"),celltype.j,sep="_")
