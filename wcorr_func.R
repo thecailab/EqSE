@@ -32,14 +32,19 @@ wcorr.calc<-function(dat.exp, dat.histone, w.exp, w.histone, alpha=3, method="sp
 
   #match matrix
   if(type=="GT"){
-    in.histone<-which(sub(".+_","",rownames(dat.histone)) %in% rownames(dat.exp))
-    dat.histone<-dat.histone[in.histone,,drop=FALSE]
-    w.histone<-w.histone[in.histone,,drop=FALSE]
-
-    match.exp<-match(sub(".+_","",rownames(dat.histone)),rownames(dat.exp))
-    dat.exp<-dat.exp[match.exp,,drop=FALSE]
-    w.exp<-w.exp[match.exp,,drop=FALSE]
+    gene.histone<-sub(".+_","",rownames(dat.histone))
   }
+  if(type=="T"){
+    gene.histone<-rownames(dat.histone)
+  }
+
+  in.histone<-which(gene.histone %in% rownames(dat.exp))
+  dat.histone<-dat.histone[in.histone,,drop=FALSE]
+  w.histone<-w.histone[in.histone,,drop=FALSE]
+
+  match.exp<-match(gene.histone,rownames(dat.exp))
+  dat.exp<-dat.exp[match.exp,,drop=FALSE]
+  w.exp<-w.exp[match.exp,,drop=FALSE]
 
   w2<-(w.histone*w.exp)^alpha
 
@@ -52,9 +57,9 @@ wcorr.calc<-function(dat.exp, dat.histone, w.exp, w.histone, alpha=3, method="sp
 
   out<-list()
 
-  for(j in 1:length(celltype.level)){
-    celltype.j<-celltype.level[j]
-    pos<-which(celltype==celltype.j)
+  for(l in 1:length(celltype.level)){
+    celltype.l<-celltype.level[l]
+    pos<-which(celltype==celltype.l)
 
     out.m<-matrix(NA, nrow(dat.exp),2)
 
@@ -63,13 +68,11 @@ wcorr.calc<-function(dat.exp, dat.histone, w.exp, w.histone, alpha=3, method="sp
       histone.i<-dat.histone[i,]
       w2.i<-w2[i,]
 
-      fit<-lm(exp.i[pos]~histone.i[pos],weight=w2.i[pos])
       out.m[i,1]<-weightedCorr(exp.i[pos],histone.i[pos],weight=w2.i[pos], method=method)
       out.m[i,2]<-length(which(w2.i[pos]>0.5))
-      colnames(out.m)<-paste(c("Rho","n"),celltype.j,sep="_")
-
-      out[[celltype.j]]<-out.m
+      colnames(out.m)<-paste(c("Rho","n"),celltype.l,sep="_")
     }
+    out[[celltype.l]]<-out.m
   }
 
   out<-do.call("cbind",out)
